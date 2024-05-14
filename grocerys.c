@@ -3,6 +3,7 @@
 int main (void)
 {
 arr[] = {};
+int arrleng = sizeof arr/ sizeof arr[0];
 
 	if (arr != '/0')
 	{
@@ -18,18 +19,14 @@ arr[] = {};
 			printf("failed to make file");
 			return 1;
 			}
-
-			if (strcmp(y/n, 'Y') == 0)
+			for (i = 0, i < arrleng, i++)
 			{
-			int i = 0;
+				if (strcmp(y/n, 'Y') == 0)
+				{
+				int i = 0;
 
-			fprint(fpt, "%s", arr[i]);
-
-			i++;
-			}
-			else if (strcmp(y/n, 'N') == 0)
-			{
-			i++;
+				fprint(fpt, "%s", arr[i]);
+				}
 			}
 	}
 fclose(ftp);
